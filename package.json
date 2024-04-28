@@ -1,18 +1,15 @@
 {
-  "name": "pkg-placeholder",
+  "name": "cooparser",
   "type": "module",
-  "version": "0.0.0",
-  "packageManager": "pnpm@9.0.2",
+  "version": "0.0.3",
+  "packageManager": "pnpm@9.0.6",
   "description": "_description_",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "author": "Alex Ant <dacom.dark.sun@gmail.com>",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/pkg-placeholder#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/pkg-placeholder.git"
+    "url": "git+https://github.com/intellect-run/cooptypes.git"
   },
-  "bugs": "https://github.com/antfu/pkg-placeholder/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
