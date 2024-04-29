@@ -5,7 +5,9 @@ export type IUint64 = number | string
 
 export interface ICounts extends ICountsBase {
 }
+
 export interface ICountsBase {
+  // тестовое описание
   key: IName
   secondary_key: IName
   value: IUint64
