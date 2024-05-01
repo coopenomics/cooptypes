@@ -1,7 +1,10 @@
-import { describe, expect, it } from 'vitest'
+// export const test3 = createTranslation.actionName
+// export const test = DraftContract.createTranslation.actionName
+// import { createTranslation } from '../src/contracts/draft/actions'
+// import { createTranslation } from '../src/contracts/draft'
 
-describe('should', () => {
-  it('exported', () => {
-    expect(1).toEqual(1)
-  })
-})
+// })
+// createTranslation.actionName
+// const function test3(data: createTranslation.ICreateTranslation): createTranslation.ICreateTranslation{
+
+// }
