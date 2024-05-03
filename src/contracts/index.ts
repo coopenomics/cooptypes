@@ -22,3 +22,13 @@ export * as RegistratorContract from './registrator'
  * Смарт-контракт управления системными токенами.
  */
 export * as TokenContract from './token'
+
+/**
+ * Смарт-контракт советов кооперативов.
+ */
+export * as SovietContract from './soviet'
+
+/**
+ * Смарт-контракт маркетплейса кооператива.
+ */
+export * as MarketContract from './marketplace'

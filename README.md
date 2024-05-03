@@ -29,7 +29,7 @@ _contract - собственное имя аккаунта контракта д
 [npm-downloads-href]: https://npmjs.com/package/cooptypes
 [bundle-src]: https://img.shields.io/bundlephobia/minzip/cooptypes?style=flat&colorA=080f12&colorB=1fa669&label=minzip
 [bundle-href]: https://bundlephobia.com/result?p=cooptypes
-[license-src]: https://img.shields.io/github/license/intellect-run/cooptypes.svg?style=flat&colorA=080f12&colorB=1fa669
-[license-href]: https://github.com/intellect-run/cooptypes/blob/main/LICENSE
+[license-src]: https://img.shields.io/github/license/copenomics/cooptypes.svg?style=flat&colorA=080f12&colorB=1fa669
+[license-href]: https://github.com/copenomics/cooptypes/blob/main/LICENSE
 [jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=080f12&colorB=1fa669
 [jsdocs-href]: https://www.jsdocs.io/package/cooptypes

@@ -5,7 +5,7 @@ import { Actors } from '../../../common'
 /**
  * Требуется авторизация аккаунта {@link Actors._admin | администратора} c позитивным балансом AXON для оплаты аренды ресурсов.
  */
-export const authorizations = [{ permissions: [Permissions.active], actor: Actors._admin }] as const
+export const authorizations = [{ permissions: [Permissions.active, Permissions.special], actor: Actors._admin }] as const
 
 /**
  * Имя действия

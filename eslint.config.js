@@ -1,5 +1,6 @@
-// @ts-check
 import antfu from '@antfu/eslint-config'
+
+// @ts-check
 
 export default antfu(
   {
@@ -9,7 +10,7 @@ export default antfu(
   },
   {
     rules: {
-      // overrides
+      'jsdoc/empty-tags': 'off', // Добавьте это правило игнора
     },
   },
 )

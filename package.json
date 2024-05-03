@@ -8,7 +8,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/intellect-run/cooptypes.git"
+    "url": "git+https://github.com/copenomics/cooptypes.git"
   },
   "keywords": [],
   "sideEffects": false,

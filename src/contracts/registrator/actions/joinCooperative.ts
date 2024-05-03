@@ -5,7 +5,7 @@ import { Actors } from '../../../common'
 /**
  * Требуется авторизация администратора кооператива или пользователя.
  */
-export const authorizations = [{ permissions: [Permissions.active], actor: Actors._admin }, { permissions: [Permissions.active], actor: Actors._username }] as const
+export const authorizations = [{ permissions: [Permissions.active, Permissions.special], actor: Actors._admin }, { permissions: [Permissions.active], actor: Actors._username }] as const
 
 /**
  * Имя действия

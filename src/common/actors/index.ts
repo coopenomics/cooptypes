@@ -14,6 +14,11 @@ export const _coopname = '_coopname'
 export const _chairman = '_chairman'
 
 /**
+ * Обобщенное имя аккаунта члена совета кооператива, которое должно быть заменено на реальное.
+ */
+export const _member = '_member'
+
+/**
  * Обобщенное имя аккаунта администратора кооператива, которое должно быть заменено на реальное.
  */
 export const _admin = '_admin'
