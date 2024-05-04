@@ -37,3 +37,8 @@ export const _token = {
   production: 'eosio.token',
   testnet: 'eosio.token',
 } as const
+
+export const _msig = {
+  production: 'eosio.msig',
+  testnet: 'eosio.msig',
+}

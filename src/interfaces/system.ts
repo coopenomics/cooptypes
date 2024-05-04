@@ -112,11 +112,6 @@ export interface IBuyrambytes {
   bytes: IUint32
 }
 
-export interface IBuyrex {
-  from: IName
-  amount: IAsset
-}
-
 export interface ICanceldelay {
   canceling_auth: IPermissionLevel
   trx_id: IChecksum256
@@ -130,33 +125,9 @@ export interface IClaimrewards {
   owner: IName
 }
 
-export interface ICloserex {
-  owner: IName
-}
-
-export interface ICnclrexorder {
-  owner: IName
-}
-
 export interface IConnector {
   balance: IAsset
   weight: IFloat64
-}
-
-export interface IConsolidate {
-  owner: IName
-}
-
-export interface IDefcpuloan {
-  from: IName
-  loan_num: IUint64
-  amount: IAsset
-}
-
-export interface IDefnetloan {
-  from: IName
-  loan_num: IUint64
-  amount: IAsset
 }
 
 export interface IDelegatebw {
@@ -178,11 +149,6 @@ export interface IDeleteauth {
   account: IName
   permission: IName
   authorized_by: IName
-}
-
-export interface IDeposit {
-  owner: IName
-  amount: IAsset
 }
 
 export interface IEmissionState {
@@ -239,18 +205,6 @@ export interface IExchangeState {
   quote: IConnector
 }
 
-export interface IFundcpuloan {
-  from: IName
-  loan_num: IUint64
-  payment: IAsset
-}
-
-export interface IFundnetloan {
-  from: IName
-  loan_num: IUint64
-  payment: IAsset
-}
-
 export interface IInit {
   version: IUint64
   core: ISymbol
@@ -281,16 +235,6 @@ export interface ILinkauth {
   authorized_by: IName
 }
 
-export interface IMvfrsavings {
-  owner: IName
-  rex: IAsset
-}
-
-export interface IMvtosavings {
-  owner: IName
-  rex: IAsset
-}
-
 export interface INameBid {
   newname: IName
   high_bidder: IName
@@ -312,11 +256,6 @@ export interface IOnblock {
 export interface IOnerror {
   sender_id: IUint128
   sent_trx: IBytes
-}
-
-export interface IPairTimePointSecInt64 {
-  first: ITimePointSec
-  second: IInt64
 }
 
 export interface IPermissionLevel {
@@ -433,87 +372,6 @@ export interface IRegproxy {
   isproxy: boolean
 }
 
-export interface IRentcpu {
-  from: IName
-  receiver: IName
-  loan_payment: IAsset
-  loan_fund: IAsset
-}
-
-export interface IRentnet {
-  from: IName
-  receiver: IName
-  loan_payment: IAsset
-  loan_fund: IAsset
-}
-
-export interface IRexBalance {
-  version: IUint8
-  owner: IName
-  vote_stake: IAsset
-  rex_balance: IAsset
-  matured_rex: IInt64
-  rex_maturities: IPairTimePointSecInt64[]
-}
-
-export interface IRexFund {
-  version: IUint8
-  owner: IName
-  balance: IAsset
-}
-
-export interface IRexLoan {
-  version: IUint8
-  from: IName
-  receiver: IName
-  payment: IAsset
-  balance: IAsset
-  total_staked: IAsset
-  loan_num: IUint64
-  expiration: ITimePoint
-}
-
-export interface IRexOrder {
-  version: IUint8
-  owner: IName
-  rex_requested: IAsset
-  proceeds: IAsset
-  stake_change: IAsset
-  order_time: ITimePoint
-  is_open: boolean
-}
-
-export interface IRexPool {
-  version: IUint8
-  total_lent: IAsset
-  total_unlent: IAsset
-  total_rent: IAsset
-  total_lendable: IAsset
-  total_rex: IAsset
-  namebid_proceeds: IAsset
-  loan_num: IUint64
-}
-
-export interface IRexReturnBuckets {
-  version: IUint8
-  return_buckets: IPairTimePointSecInt64[]
-}
-
-export interface IRexReturnPool {
-  version: IUint8
-  last_dist_time: ITimePointSec
-  pending_bucket_time: ITimePointSec
-  oldest_bucket_time: ITimePointSec
-  pending_bucket_proceeds: IInt64
-  current_rate_of_increase: IInt64
-  proceeds: IInt64
-}
-
-export interface IRexexec {
-  user: IName
-  max: IUint16
-}
-
 export interface IRmvproducer {
   producer: IName
 }
@@ -521,11 +379,6 @@ export interface IRmvproducer {
 export interface ISellram {
   account: IName
   bytes: IInt64
-}
-
-export interface ISellrex {
-  from: IName
-  rex: IAsset
 }
 
 export interface ISetabi {
@@ -587,10 +440,6 @@ export interface ISetramrate {
   bytes_per_block: IUint16
 }
 
-export interface ISetrex {
-  balance: IAsset
-}
-
 export interface IUndelegatebw {
   from: IName
   receiver: IName
@@ -609,23 +458,12 @@ export interface IUnregprod {
   producer: IName
 }
 
-export interface IUnstaketorex {
-  owner: IName
-  receiver: IName
-  from_net: IAsset
-  from_cpu: IAsset
-}
-
 export interface IUpdateauth {
   account: IName
   permission: IName
   parent: IName
   auth: IAuthority
   authorized_by: IName
-}
-
-export interface IUpdaterex {
-  owner: IName
 }
 
 export interface IUpdtrevision {
@@ -669,11 +507,6 @@ export interface IWaitWeight {
 
 export interface IWasmcfg {
   settings: IName
-}
-
-export interface IWithdraw {
-  owner: IName
-  amount: IAsset
 }
 
 export interface ILimitAuthChange {

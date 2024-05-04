@@ -32,3 +32,8 @@ export * as SovietContract from './soviet'
  * Смарт-контракт маркетплейса кооператива.
  */
 export * as MarketContract from './marketplace'
+
+/**
+ * Смарт-контракт для мульти-подписей транзакций.
+ */
+export * as MsigContract from './msig'
