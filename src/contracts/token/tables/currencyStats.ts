@@ -1,4 +1,4 @@
-import type * as Token from '../../../interfaces/eosio.token'
+import type * as Token from '../../../interfaces/token'
 
 /**
  * Имя таблицы

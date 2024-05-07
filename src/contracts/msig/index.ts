@@ -6,6 +6,6 @@ export * as Tables from './tables'
 /**
  * @private
  */
-export * as Interfaces from '../../interfaces/eosio.msig'
+export * as Interfaces from '../../interfaces/msig'
 
 export const contractName = contractNames._msig

@@ -6,6 +6,6 @@ export * as Tables from './tables'
 /**
  * @private
  */
-export * as Interfaces from '../../interfaces/eosio.token'
+export * as Interfaces from '../../interfaces/token'
 
 export const contractName = contractNames._token

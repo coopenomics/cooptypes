@@ -1,5 +1,5 @@
 import * as Permissions from '../../../common/permissions'
-import type * as Token from '../../../interfaces/eosio.token'
+import type * as Token from '../../../interfaces/token'
 
 /**
  * Для сжигания токенов требуется авторизация учетной записи эмитента, указанная {@link create.ICreate | при создании токена}.

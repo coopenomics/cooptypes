@@ -417,12 +417,6 @@ export interface ISetcode {
   memo: string
 }
 
-export interface ISetinflation {
-  annual_rate: IInt64
-  inflation_pay_factor: IInt64
-  votepay_factor: IInt64
-}
-
 export interface ISetparams {
   params: IBlockchainParametersT
 }

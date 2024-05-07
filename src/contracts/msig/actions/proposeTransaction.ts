@@ -1,5 +1,5 @@
 import * as Permissions from '../../../common/permissions'
-import type * as Msig from '../../../interfaces/eosio.msig'
+import type * as Msig from '../../../interfaces/msig'
 import { Actors } from '../../../common'
 
 /**

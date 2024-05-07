@@ -1,4 +1,4 @@
-import type * as Marketplace from '../../../interfaces/eosio.msig'
+import type * as Marketplace from '../../../interfaces/msig'
 import { ContractNames } from '../../../common'
 
 /**

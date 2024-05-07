@@ -1,5 +1,5 @@
 import * as Permissions from '../../../common/permissions'
-import type * as Token from '../../../interfaces/eosio.token'
+import type * as Token from '../../../interfaces/token'
 import { Actors } from '../../../common'
 
 export const authorizations = [{ permissions: [Permissions.active], actor: Actors._username }] as const

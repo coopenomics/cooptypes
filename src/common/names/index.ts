@@ -41,4 +41,9 @@ export const _token = {
 export const _msig = {
   production: 'eosio.msig',
   testnet: 'eosio.msig',
-}
+} as const
+
+export const _wrap = {
+  production: 'eosio.wrap',
+  testnet: 'eosio.wrap',
+} as const
