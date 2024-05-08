@@ -1,29 +1,29 @@
 /**
  * Действие совершения перевода токенов AXON между аккаунтами.
  */
-export * as transfer from './transfer'
+export * as Transfer from './transfer'
 
 /**
  * Действие создает нулевой баланс у пользователя за счет плательщика RAM. Используется автоматически при входящем переводе за счет RAM отправителя.
  */
-export * as open from './open'
+export * as Open from './open'
 
 /**
  * Действие удаляет запись о нулевом балансе пользователя и тем самым освобождает RAM плательщика.
  */
-export * as close from './close'
+export * as Close from './close'
 
 /**
  * Действие создаёт токен для последующего выпуска.
  */
-export * as create from './create'
+export * as Create from './create'
 
 /**
  * Действие по выпуску токенов.
  */
-export * as issue from './issue'
+export * as Issue from './issue'
 
 /**
  * Действие по сжиганию токенов.
  */
-export * as retire from './retire'
+export * as Retire from './retire'
