@@ -1,37 +1,37 @@
 /**
  * Действие инициализирует системный контракт после установки.
  */
-export * as init from './init'
+export * as Init from './init'
 
 /**
  * Действие устанавливает код контракта на аккаунт.
  */
-export * as setCode from './setCode'
+export * as SetCode from './setCode'
 
 /**
  * Действие устанавливает параметры эмиссии после инициализации контракта.
  */
-export * as initEmission from './initEmission'
+export * as InitEmission from './initEmission'
 
 /**
  * Действие устанавливает лимит времени использования процессора для аккаунта.
  */
-export * as setCPULimits from './setCPULimits'
+export * as SetCPULimits from './setCPULimits'
 
 /**
  * Действие устанавливает лимит объема внутреннего сетевого трафика для аккаунта.
  */
-export * as setNETLimits from './setNETLimits'
+export * as SetNETLimits from './setNETLimits'
 
 /**
  * Действие устанавливает лимит оперативной памяти для аккаунта.
  */
-export * as setRAMLimits from './setRAMLimits'
+export * as SetRAMLimits from './setRAMLimits'
 
 /**
  * Действие активирует дополнительную функциональность протокола по её хэшу.
  */
-export * as activateFeature from './activateFeature'
+export * as ActivateFeature from './activateFeature'
 
 /**
  * Действие для бессрочной ресурсов CPU и NET за счёт токенов аккаунта.
@@ -39,7 +39,7 @@ export * as activateFeature from './activateFeature'
  * После активации системы POWERUP действие delegateBW не имеет никакого эффекта.
  * @deprecated
  */
-export * as delegateBW from './delegateBW'
+export * as DelegateBW from './delegateBW'
 
 /**
  * Действие для возврата токенов на аккаунт из бессрочной аренды ресурсов CPU и NET.
@@ -47,7 +47,7 @@ export * as delegateBW from './delegateBW'
  * После активации системы POWERUP действие undelegateBW не имеет никакого эффекта.
  * @deprecated
  */
-export * as undelegateBW from './undelegateBW'
+export * as UndelegateBW from './undelegateBW'
 
 /**
  * Действие для бессрочной аренды оперативной памяти для аккаунта с указанием количества токенов в залоге.
@@ -55,7 +55,7 @@ export * as undelegateBW from './undelegateBW'
  * После активации системы POWERUP действие buyRAM не имеет никакого эффекта.
  * @deprecated
  */
-export * as buyRAM from './buyRAM'
+export * as BuyRAM from './buyRAM'
 
 /**
  * Действие для бессрочной аренды оперативной памяти для аккаунта с указанием количества требуемых байт.
@@ -63,7 +63,7 @@ export * as buyRAM from './buyRAM'
  * После активации системы POWERUP действие buyRAMBytes не имеет никакого эффекта.
  * @deprecated
  */
-export * as buyRAMBytes from './buyRAMBytes'
+export * as BuyRAMBytes from './buyRAMBytes'
 
 /**
  * Действие для возврата токенов из трехдневной заморозки при отмены бессрочной аренды ресурсов.
@@ -71,83 +71,83 @@ export * as buyRAMBytes from './buyRAMBytes'
  * После активации системы POWERUP действие refund не используется.
  * @deprecated
  */
-export * as refund from './refund'
+export * as Refund from './refund'
 
 /**
  * Действие для регистрации производителя блоков.
  */
-export * as registerProducer from './registerProducer'
+export * as RegisterProducer from './registerProducer'
 
 /**
  * Расширенное действие для регистрации производителя блоков с мультиподписью.
  */
-export * as registerProducer2 from './registerProducer2'
+export * as RegisterProducer2 from './registerProducer2'
 
 /**
  * Действие для отмены регистрации производителя блоков и его отключения.
  */
-export * as unregisterProducer from './unregisterProducer'
+export * as UnregisterProducer from './unregisterProducer'
 
 /**
  * Действие для установки общего количества RAM, которое предоставляется каждым производителем.
  * Может только увеличиваться и не может уменьшаться.
  */
-export * as setTotalRAM from './setTotalRAM'
+export * as SetTotalRAM from './setTotalRAM'
 
 /**
  * Действие для установки скорости увеличения количества RAM, которое предоставляется каждым производителем.
  */
-export * as setTotalRAMRate from './setTotalRAMRate'
+export * as SetTotalRAMRate from './setTotalRAMRate'
 
 /**
  * Действие для голосования за список производителей. Список должен быть отсортирован по алфавиту.
  */
-export * as voteForProducer from './voteForProducer'
+export * as VoteForProducer from './voteForProducer'
 
 /**
  * Действие для обновления силы голоса после изменения количества ресурсов на аккаунте.
  * Действие устарело и не используется в связи с тем, что сила голоса каждого голосующего аккаунта всегда постоянна и равна 1.
  * @deprecated
  */
-export * as voteUpdate from './voteUpdate'
+export * as VoteUpdate from './voteUpdate'
 
 /**
  * Действие для регистрации аккаунта в качестве прокси на голосовании за производителей.
  * Позволяет прокси собрать голоса участников на себе и проголосовать за производителей от их лица.
  * Вес голоса каждого прокси кратен количеству участников, которые делегировали ему свой голос.
  */
-export * as registerProxy from './registerProxy'
+export * as RegisterProxy from './registerProxy'
 
 /**
  * Действие позволяет производителю получить вознаграждение согласно количеству произведенных блоков и собранных голосов.
  */
-export * as claimRewards from './claimRewards'
+export * as ClaimRewards from './claimRewards'
 
 /**
  * Действие позволяет системному контракту за подписью 70% активных делегатов отключить делегата от производства блоков.
  */
-export * as removeProducer from './removeProducer'
+export * as RemoveProducer from './removeProducer'
 
 /**
  * Действие для обновления ревизии контракта, что позволяет последовательно вводить и активировать новые особенности работы.
  */
-export * as updateRevision from './updateRevision'
+export * as UpdateRevision from './updateRevision'
 
 /**
  * Действие для участия в аукционе коротких имен.
  * Временно недоступно.
  */
-export * as bidName from './bidName'
+export * as BidName from './bidName'
 
 /**
  * Действие для возврата токенов из аукциона имен.
  */
-export * as bidNameRefund from './bidNameRefund'
+export * as BidNameRefund from './bidNameRefund'
 
 /**
  * Действие для перевода аккаунта в статус привелигированного.
  */
-export * as setPrivileged from './setPrivileged'
+export * as SetPrivileged from './setPrivileged'
 
 /**
  * Действие для установки лимитов ресурсов (RAM, NET, CPU) для аккаунта.
@@ -155,58 +155,58 @@ export * as setPrivileged from './setPrivileged'
  * и которые не имеют установленных лимитов на эти ресурсы. Требует права авторизации
  * системного смарт-контракта для выполнения.
  */
-export * as setAccountLimits from './setAccountLimits'
+export * as SetAccountLimits from './setAccountLimits'
 
 /**
  * Действие для установки параметров блокчейна.
  * Применяется для конфигурирования основных технических характеристик и рабочих параметров сети.
  * Требует права авторизации системного смарт-контракта для выполнения.
  */
-export * as setParams from './setParams'
+export * as SetParams from './setParams'
 
 /**
  * Действие для инициализации механизма временной аренды ресурсов.
  * Позволяет установить начальные параметры аренды.
  */
-export * as initPowerup from './initPowerup'
+export * as InitPowerup from './initPowerup'
 
 /**
  * Действие для обработки очереди возврата арендованных ресурсов.
  * Вызывается автоматически при каждом действии powerup и может быть вызвано любым пользователем.
  */
-export * as execPowerup from './execPowerup'
+export * as ExecPowerup from './execPowerup'
 
 /**
  * Действие для аренды ресурсов CPU, NET и RAM.
  */
-export * as powerup from './powerup'
+export * as Powerup from './powerup'
 
 /**
  * Действие используется для регистрации нового аккаунта в блокчейне.
  */
-export * as newAccount from './newAccount'
+export * as NewAccount from './newAccount'
 
 /**
  * Через это действие происходит определение интерфейса взаимодействия с контрактом через ABI.
  */
-export * as setAbi from './setAbi'
+export * as SetAbi from './setAbi'
 
 /**
  * Это действие изменяет конфигурацию полномочий для различных операций аккаунта.
  */
-export * as updateAuth from './updateAuth'
+export * as UpdateAuth from './updateAuth'
 
 /**
  * Действие отменяет существующую конфигурацию полномочий, удаляя их для аккаунта.
  */
-export * as deleteAuth from './deleteAuth'
+export * as DeleteAuth from './deleteAuth'
 
 /**
  * Через это действие назначаются особые права для выполнения конкретных действий смарт-контракта.
  */
-export * as linkAuth from './linkAuth'
+export * as LinkAuth from './linkAuth'
 
 /**
  * Действие позволяет отменить ранее запланированную отложенную транзакцию.
  */
-export * as cancelDelay from './cancelDelay'
+export * as CancelDelay from './cancelDelay'

@@ -1,22 +1,22 @@
 /**
  * Принимает голос "ПРОТИВ" от члена совета по повестке собрания.
  */
-export * as voteAgainst from './voteAgainst'
+export * as VoteAgainst from './voteAgainst'
 
 /**
  * Принимает голос "ПРОТИВ" от члена совета по повестке собрания.
  */
-export * as voteFor from './voteFor'
+export * as VoteFor from './voteFor'
 
 /**
  * Принимает отмену голоса. Метод позволяет члену совета отменить свой голос, если решение еще не принято.
  */
-export * as cancelVote from './cancelVote'
+export * as CancelVote from './cancelVote'
 
 /**
  * Действие утверждения принятого советом решения.
  */
-export * as authorize from './authorize'
+export * as Authorize from './authorize'
 
 /**
  * Действие исполнения принятого решения.
@@ -25,49 +25,49 @@ export * as authorize from './authorize'
  * Однако, любой пользователь/кооператив может вызвать исполнение решения после того,
  * как оно было принято советом, если председатель по-какой-либо причине не исполнил его сам.
  */
-export * as exec from './exec'
+export * as Exec from './exec'
 
 /**
  * Действие поставляет в совет на голосование заявления на взнос и возврат взноса двух пайщиков целевой потребительской программы маркетплейса.
  * @private
  */
-export * as marketDecision from './marketDecision'
+export * as MarketDecision from './marketDecision'
 
 /**
  * Действие поставляет в совет на голосование заявление на возврат паевого взноса.
  * @private
  */
-export * as withdrawDecision from './withdrawDecision'
+export * as WithdrawDecision from './withdrawDecision'
 
 /**
  * Действие поставляет в совет на голосование документ о необходимости использования средств фондов кооператива (кроме паевого).
  * @private
  */
-export * as fundWithdrawDecision from './fundWithdrawDecision'
+export * as FundWithdrawDecision from './fundWithdrawDecision'
 
 /**
  * Действие поставляет в совет на голосование заявление на вступление в кооператив.
  * @private
  */
-export * as joinCoopDecision from './joinCoopDecision'
+export * as JoinCoopDecision from './joinCoopDecision'
 
 /**
  * Действие поставляет в совет информацию о завершении процесса клиринга и инициирует выпуск закрывающих документов в реестр.
  * @private
  */
-export * as productRecieved from './productRecieved'
+export * as ProductRecieved from './productRecieved'
 
 /**
  * Действие валидации документов, поданных на голосование в совет.
  */
-export * as validate from './validate'
+export * as Validate from './validate'
 
 /**
  * Подключает автоматизацию принятия решений по указанным типам вопросов на повестке для члена совета.
  */
-export * as automate from './automate'
+export * as Automate from './automate'
 
 /**
  * Отключает автоматизацию принятия решений по указанным типам вопросов на повестке для члена совета.
  */
-export * as disautomate from './disautomate'
+export * as Disautomate from './disautomate'

@@ -1,19 +1,19 @@
 /**
  * Действие добавления администратора.
  */
-export * as addAdmin from './addAdmin'
+export * as AddAdmin from './addAdmin'
 
 /**
  * Действие удаления администратора.
  */
-export * as deleteAdmin from './deleteAdmin'
+export * as DeleteAdmin from './deleteAdmin'
 
 /*
 * Действие регистрации платежа.
 */
-export * as registerPayment from './registerPayment'
+export * as RegisterPayment from './registerPayment'
 
 /*
 * Действие установки прав администраторов.
 */
-export * as setRights from './setRights'
+export * as SetRights from './setRights'

@@ -1,14 +1,14 @@
 /**
  * Действие создаёт новый адрес.
  */
-export * as createAddress from './createAddress'
+export * as CreateAddress from './createAddress'
 
 /**
  * Действие удаляет адресс.
  */
-export * as deleteAddress from './deleteAddress'
+export * as DeleteAddress from './deleteAddress'
 
 /**
  * Действие редактирует адресс.
  */
-export * as editAddress from './editAddress'
+export * as EditAddress from './editAddress'
