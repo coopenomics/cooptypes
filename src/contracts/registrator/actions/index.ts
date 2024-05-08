@@ -1,35 +1,35 @@
 /**
  * Действие верификации аккаунта
  */
-export * as verificateAccount from './verificateAccount'
+export * as VerificateAccount from './verificateAccount'
 
 /**
  * Действие обновления публичных данных аккаунта
  */
-export * as updateAccount from './updateAccount'
+export * as UpdateAccount from './updateAccount'
 
 /**
  * Действие создания нового аккаунта
  */
-export * as createAccount from './createAccount'
+export * as CreateAccount from './createAccount'
 
 /**
  * Действие регистрации карточки организации в кооперативе
  */
-export * as registerOrganization from './registerOrganization'
+export * as RegisterOrganization from './registerOrganization'
 
 /**
  * Действие замены активного ключа пользователя за подписью системного аккаунта делегатов.
  */
-export * as changeKey from './changeKey'
+export * as ChangeKey from './changeKey'
 
 /**
  * Действие подачи заявления на вступление в кооператив
  */
-export * as joinCooperative from './joinCooperative'
+export * as JoinCooperative from './joinCooperative'
 
 /**
  * Действие, которое вызывается контрактом _soviet для подтверждения заявки на вступление в кооператив после принятия советом решения.
  * @private
  */
-export * as confirmJoin from './confirmJoin'
+export * as ConfirmJoin from './confirmJoin'

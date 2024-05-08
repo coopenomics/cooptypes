@@ -1,7 +1,7 @@
-export * as createTranslation from './createTranslation'
-export * as createDraft from './createDraft'
-export * as deleteDraft from './deleteDraft'
-export * as editTranslation from './editTranslation'
+export * as CreateTranslation from './createTranslation'
+export * as CreateDraft from './createDraft'
+export * as DeleteDraft from './deleteDraft'
+export * as EditTranslation from './editTranslation'
 
 /**
  * Имя действия

@@ -2,85 +2,85 @@
  * @private
  * Вызывается контрактом автоматически по ходу выполнения логики для прозрачного добавления фонда накопления.
  */
-export * as addAccumulation from './addAccumulation'
+export * as AddAccumulation from './addAccumulation'
 
 /**
  * @private
  * Вызывается контрактом автоматически по ходу выполнения логики для прозрачного списания фонда накопления.
  */
-export * as subAccumulation from './subAccumulation'
+export * as SubAccumulation from './subAccumulation'
 
 /**
  * @private
  * Вызывается контрактом автоматически по ходу выполнения логики для прозрачного увеличения паевого фонда.
  */
-export * as addCirculation from './addCirculation'
+export * as AddCirculation from './addCirculation'
 
 /**
  * @private
  * Вызывается контрактом автоматически по ходу выполнения логики для прозрачного списания членских взносов по фонду.
  */
-export * as addExpense from './addExpense'
+export * as AddExpense from './addExpense'
 
 /**
  * @private
  * Вызывается контрактом _soviet автоматически по ходу выполнения логики для установки решения совета кооператива о использовании фонда.
  */
-export * as authorizeWithdraw from './authorizeWithdraw'
+export * as AuthorizeWithdraw from './authorizeWithdraw'
 
 /**
  * Вызывается администратором для подтверждения о совершении вывода.
  */
-export * as completeWithdraw from './completeWithdraw'
+export * as CompleteWithdraw from './completeWithdraw'
 
 /**
  * Вызывается контрактом автоматически по ходу выполнения логики для возврата идентификатора нового фонда после его создания.
  * @private
  */
-export * as newFund from './newFund'
+export * as NewFund from './newFund'
 
 /**
  * Вызывается председателем для создания фонда
  */
-export * as createFund from './createFund'
+export * as CreateFund from './createFund'
 
 /**
  * Вызывается председателем для удаления фонда
  */
-export * as deleteFund from './deleteFund'
+export * as DeleteFund from './deleteFund'
 
 /**
  * Вызывается председателем для редактирования фонда
  */
-export * as editFund from './editFund'
+export * as EditFund from './editFund'
 
 /**
  * Действие используется для создания вывода средств из фонда накопления или по фонду списания, которое
  * затем требует решения совета исполнения с помощью действия {@link authorizeWithdraw | авторизации} и последующего подтверждения исполнения с помощью действия  {@link completeWithdraw | подтверждения}.
  */
-export * as createWithdraw from './createWithdraw'
+export * as CreateWithdraw from './createWithdraw'
 
 /**
  * Метод используется при создании цифрового кооператива для инициализации его фондов с нулевыми значениями.
  * @private
  */
-export * as init from './init'
+export * as Init from './init'
 
 /**
  * Действие вызывается контрактом в процессе исполнения для возврата идентификатора нового списания или вывода.
  * @private
  */
-export * as newWithdraw from './newWithdraw'
+export * as NewWithdraw from './newWithdraw'
 
 /**
  * Действие для распределения членского взноса по фондам накопления согласно принятым положениям
  * и сохранения остатка после распределения в кошельке для дальнейшего списания по статьям.
  * @private
  */
-export * as spreadAmount from './spreadAmount'
+export * as SpreadAmount from './spreadAmount'
 
 /**
  * Метод списания средств из паевого фонда вызывается контрактом шлюза при выполнении поручения на вывод средств с кошелька.
  * @private
  */
-export * as subCirculation from './subCirculation'
+export * as SubCirculation from './subCirculation'

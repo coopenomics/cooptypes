@@ -1,2 +1,2 @@
-export * as createBoard from './createBoard'
-export * as updateBoard from './updateBoard'
+export * as CreateBoard from './createBoard'
+export * as UpdateBoard from './updateBoard'
