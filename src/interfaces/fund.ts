@@ -2,6 +2,9 @@
 
 export type IAsset = string
 export type IName = string
+export type IChecksum256 = string
+export type IPublicKey = string
+export type ISignature = string
 export type ITimePointSec = string
 export type IUint64 = number | string
 
@@ -72,9 +75,9 @@ export interface IDelfund {
 }
 
 export interface IDocument {
-  hash: string
-  pkey: string
-  sign: string
+  hash: IChecksum256
+  public_key: IPublicKey
+  signature: ISignature
   meta: string
 }
 

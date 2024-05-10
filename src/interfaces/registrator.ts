@@ -2,7 +2,9 @@
 
 export type IAsset = string
 export type IName = string
+export type IChecksum256 = string
 export type IPublicKey = string
+export type ISignature = string
 export type ITimePointSec = string
 export type IUint64 = number | string
 
@@ -13,8 +15,9 @@ export interface IAccounts {
   type: IName
   status: IName
   meta: string
-  reputation: IUint64
-  registration_amount: IAsset
+  is_active: boolean
+  storages: IName[]
+  verifications: IVerification[]
   registered_at: ITimePointSec
   signature_expires_at: ITimePointSec
 }
@@ -39,13 +42,14 @@ export interface IConfirmreg {
 }
 
 export interface IDocument {
-  hash: string
-  pkey: string
-  sign: string
+  hash: IChecksum256
+  public_key: IPublicKey
+  signature: ISignature
   meta: string
 }
 
 export interface IJoincoop {
+  registrator: IName
   coopname: IName
   username: IName
   document: IDocument
@@ -53,6 +57,7 @@ export interface IJoincoop {
 
 export interface INewaccount {
   registrator: IName
+  coopname: IName
   referer: IName
   username: IName
   public_key: IPublicKey
@@ -61,10 +66,8 @@ export interface INewaccount {
 }
 
 export interface IOrgData {
-  storage: IStorage
   is_cooperative: boolean
   coop_type: IName
-  token_contract: IName
   announce: string
   description: string
   initial: IAsset
@@ -74,57 +77,43 @@ export interface IOrgData {
 export interface IOrgs {
   username: IName
   parent_username: IName
-  verifications: IVerification[]
-  storages: IStorage[]
-  is_cooperative: boolean
-  is_active: boolean
-  coop_type: IName
-  token_contract: IName
   announce: string
   description: string
+  is_cooperative: boolean
+  coop_type: IName
   registration: IAsset
   initial: IAsset
   minimum: IAsset
 }
 
 export interface IPlotData {
-  storage: IStorage
   announce: string
   description: string
 }
 
-export interface IRegorg {
-  coopname: IName
-  username: IName
-  params: IOrgData
-}
-
-export interface IRegplot {
+export interface IRegdepartmnt {
+  registrator: IName
   coopname: IName
   username: IName
   params: IPlotData
 }
 
-export interface IReguser {
+export interface IRegorg {
+  registrator: IName
   coopname: IName
   username: IName
-  storage: IStorage
+  params: IOrgData
 }
 
-export interface IStorage {
-  storage_username: IName
+export interface IReguser {
+  registrator: IName
+  coopname: IName
+  username: IName
 }
 
 export interface IUpdate {
   username: IName
   meta: string
-}
-
-export interface IUsers {
-  username: IName
-  is_active: boolean
-  storages: IStorage[]
-  verifications: IVerification[]
 }
 
 export interface IVerificate {

@@ -2,6 +2,9 @@
 
 export type IAsset = string
 export type IName = string
+export type IChecksum256 = string
+export type IPublicKey = string
+export type ISignature = string
 export type ITimePointSec = string
 export type IUint64 = number | string
 
@@ -117,12 +120,6 @@ export interface IBoards {
   last_update: ITimePointSec
 }
 
-export interface ICancelorder {
-  coopname: IName
-  username: IName
-  exchange_id: IUint64
-}
-
 export interface ICancelvote {
   coopname: IName
   member: IName
@@ -143,11 +140,6 @@ export interface IChanges {
   exchange_id: IUint64
   contribution_product_decision_id: IUint64
   return_product_decision_id: IUint64
-}
-
-export interface ICompleted {
-  coopname: IName
-  exchange_id: IUint64
 }
 
 export interface ICounts extends ICountsBase {
@@ -231,9 +223,9 @@ export interface IDisautomate {
 }
 
 export interface IDocument {
-  hash: string
-  pkey: string
-  sign: string
+  hash: IChecksum256
+  public_key: IPublicKey
+  signature: ISignature
   meta: string
 }
 
@@ -290,14 +282,6 @@ export interface IJoincoops {
   notice: string
 }
 
-export interface IMcontribute {
-  coopname: IName
-  username: IName
-  program_id: IUint64
-  type: IName
-  secondary_id: IUint64
-}
-
 export interface IParticipants {
   username: IName
   created_at: ITimePointSec
@@ -307,14 +291,6 @@ export interface IParticipants {
   is_initial: boolean
   is_minimum: boolean
   has_vote: boolean
-}
-
-export interface IPcontribute {
-  coopname: IName
-  username: IName
-  program_id: IUint64
-  type: IName
-  secondary_id: IUint64
 }
 
 export interface IProgcomarket {
