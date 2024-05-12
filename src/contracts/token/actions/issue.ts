@@ -1,7 +1,7 @@
 import * as Permissions from '../../../common/permissions'
 import type * as Token from '../../../interfaces/token'
 /**
- * Для выпуска токенов требуется авторизация учетной записи эмитента, указанная {@link create.ICreate | при создании токена}.
+ * Для выпуска токенов требуется авторизация учетной записи эмитента, указанная в поле issuer при создании токена.
  */
 export const authorizations = [{ permissions: [Permissions.active], actor: 'currencyStats.issuer' }] as const
 

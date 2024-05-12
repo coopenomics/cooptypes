@@ -187,6 +187,11 @@ export * as Powerup from './powerup'
 export * as NewAccount from './newAccount'
 
 /**
+ * Действие используется для регистрации нового аккаунта в блокчейне контрактом регистратора.
+ */
+export * as CreateAccount from './createAccount'
+
+/**
  * Через это действие происходит определение интерфейса взаимодействия с контрактом через ABI.
  */
 export * as SetAbi from './setAbi'
