@@ -33,3 +33,9 @@ export * as JoinCooperative from './joinCooperative'
  * @private
  */
 export * as ConfirmJoin from './confirmJoin'
+
+/**
+ * Действие, которые вызывается системным контрактом для инициализации.
+ * @private
+ */
+export * as Init from './init'

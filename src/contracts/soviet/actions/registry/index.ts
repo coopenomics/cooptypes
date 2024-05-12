@@ -27,3 +27,9 @@ export * as Act from './act'
  * @private
  */
 export * as Decision from './decision'
+
+/**
+ * Действие фиксирует в реестре идентификатор созданной целевой потребительской программы кооператива.
+ * @private
+ */
+export * as Program from './program'
