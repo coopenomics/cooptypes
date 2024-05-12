@@ -8,14 +8,13 @@ export type ISignature = string
 export type ITimePointSec = string
 export type IUint64 = number | string
 
-export interface IAccounts {
+export interface IAccount {
   username: IName
   referer: IName
   registrator: IName
   type: IName
   status: IName
   meta: string
-  is_active: boolean
   storages: IName[]
   verifications: IVerification[]
   registered_at: ITimePointSec
@@ -48,6 +47,9 @@ export interface IDocument {
   meta: string
 }
 
+export interface IInit {
+}
+
 export interface IJoincoop {
   registrator: IName
   coopname: IName
@@ -74,7 +76,7 @@ export interface IOrgData {
   minimum: IAsset
 }
 
-export interface IOrgs {
+export interface IOrganization {
   username: IName
   parent_username: IName
   announce: string

@@ -15,4 +15,4 @@ export const scope = Actors._coopname
  * @interface
  * Таблица хранит информацию о адресах кооператива.
  */
-export type IAddresses = Soviet.IAddresses
+export type IAddress = Soviet.IAddress

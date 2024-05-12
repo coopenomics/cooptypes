@@ -31,6 +31,15 @@ export interface IAuthorize {
   return_product_authorization: IDocument
 }
 
+export interface IBalances extends IBalancesBase {
+}
+
+export interface IBalancesBase {
+  id: IUint64
+  contract: IName
+  quantity: IAsset
+}
+
 export interface ICancel {
   coopname: IName
   username: IName
@@ -41,6 +50,15 @@ export interface IComplete {
   coopname: IName
   username: IName
   exchange_id: IUint64
+}
+
+export interface ICounts extends ICountsBase {
+}
+
+export interface ICountsBase {
+  key: IName
+  secondary_key: IName
+  value: IUint64
 }
 
 export interface IDecline {
@@ -68,55 +86,6 @@ export interface IDocument {
   public_key: IPublicKey
   signature: ISignature
   meta: string
-}
-
-export interface IExchange {
-  id: IUint64
-  parent_id: IUint64
-  program_id: IUint64
-  coopname: IName
-  type: IName
-  status: IName
-  username: IName
-  parent_username: IName
-  token_contract: IName
-  unit_cost: IAsset
-  supplier_amount: IAsset
-  total_cost: IAsset
-  membership_fee: IAsset
-  remain_units: IUint64
-  blocked_units: IUint64
-  delivered_units: IUint64
-  data: string
-  meta: string
-  money_contributor: IName
-  product_contributor: IName
-  contribute_product_statement: IDocument
-  return_product_statement: IDocument
-  contribution_product_decision_id: IUint64
-  contribution_product_authorization: IDocument
-  return_product_decision_id: IUint64
-  return_product_authorization: IDocument
-  product_contribution_act_validation: IDocument
-  product_contribution_act: IDocument
-  product_recieve_act: IDocument
-  product_recieve_act_validation: IDocument
-  product_lifecycle_secs: IUint64
-  cancellation_fee: IUint64
-  cancellation_fee_amount: IAsset
-  created_at: ITimePointSec
-  accepted_at: ITimePointSec
-  supplied_at: ITimePointSec
-  delivered_at: ITimePointSec
-  recieved_at: ITimePointSec
-  completed_at: ITimePointSec
-  declined_at: ITimePointSec
-  disputed_at: ITimePointSec
-  canceled_at: ITimePointSec
-  warranty_delay_until: ITimePointSec
-  deadline_for_receipt: ITimePointSec
-  is_warranty_return: boolean
-  warranty_return_id: IUint64
 }
 
 export interface IExchangeParams {
@@ -177,6 +146,55 @@ export interface IRecievecnfrm {
   username: IName
   exchange_id: IUint64
   document: IDocument
+}
+
+export interface IRequest {
+  id: IUint64
+  parent_id: IUint64
+  program_id: IUint64
+  coopname: IName
+  type: IName
+  status: IName
+  username: IName
+  parent_username: IName
+  token_contract: IName
+  unit_cost: IAsset
+  supplier_amount: IAsset
+  total_cost: IAsset
+  membership_fee: IAsset
+  remain_units: IUint64
+  blocked_units: IUint64
+  delivered_units: IUint64
+  data: string
+  meta: string
+  money_contributor: IName
+  product_contributor: IName
+  contribute_product_statement: IDocument
+  return_product_statement: IDocument
+  contribution_product_decision_id: IUint64
+  contribution_product_authorization: IDocument
+  return_product_decision_id: IUint64
+  return_product_authorization: IDocument
+  product_contribution_act_validation: IDocument
+  product_contribution_act: IDocument
+  product_recieve_act: IDocument
+  product_recieve_act_validation: IDocument
+  product_lifecycle_secs: IUint64
+  cancellation_fee: IUint64
+  cancellation_fee_amount: IAsset
+  created_at: ITimePointSec
+  accepted_at: ITimePointSec
+  supplied_at: ITimePointSec
+  delivered_at: ITimePointSec
+  recieved_at: ITimePointSec
+  completed_at: ITimePointSec
+  declined_at: ITimePointSec
+  disputed_at: ITimePointSec
+  canceled_at: ITimePointSec
+  warranty_delay_until: ITimePointSec
+  deadline_for_receipt: ITimePointSec
+  is_warranty_return: boolean
+  warranty_return_id: IUint64
 }
 
 export interface ISupply {

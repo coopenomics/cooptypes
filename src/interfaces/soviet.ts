@@ -30,6 +30,14 @@ export interface IAddprogbal {
 }
 
 export interface IAddress {
+  id: IUint64
+  coopname: IName
+  departname: IName
+  data: IAddressData
+  meta: string
+}
+
+export interface IAddressData {
   latitude: string
   longitude: string
   country: string
@@ -43,14 +51,6 @@ export interface IAddress {
   directions: string
   phone_number: string
   business_hours: string
-}
-
-export interface IAddresses {
-  id: IUint64
-  coopname: IName
-  cooplate: IName
-  data: IAddress
-  meta: string
 }
 
 export interface IAddstaff {
@@ -154,8 +154,8 @@ export interface ICountsBase {
 export interface ICreaddress {
   coopname: IName
   chairman: IName
-  cooplate: IName
-  data: IAddress
+  departname: IName
+  data: IAddressData
   meta: string
 }
 
@@ -182,14 +182,6 @@ export interface ICreateprog {
 }
 
 export interface IDecision {
-  coopname: IName
-  username: IName
-  action: IName
-  decision_id: IUint64
-  document: IDocument
-}
-
-export interface IDecisions {
   id: IUint64
   coopname: IName
   username: IName
@@ -239,8 +231,8 @@ export interface IEditaddress {
   coopname: IName
   chairman: IName
   address_id: IUint64
-  cooplate: IName
-  data: IAddress
+  departname: IName
+  data: IAddressData
   meta: string
 }
 
@@ -268,6 +260,9 @@ export interface IFundwithdraw {
   document: IDocument
 }
 
+export interface IInit {
+}
+
 export interface IJoincoop {
   coopname: IName
   username: IName
@@ -280,6 +275,14 @@ export interface IJoincoops {
   is_paid: boolean
   statement: IDocument
   notice: string
+}
+
+export interface IOnewallet {
+  username: IName
+  coopname: IName
+  available: IAsset
+  blocked: IAsset
+  minimum: IAsset
 }
 
 export interface IParticipants {
@@ -313,7 +316,7 @@ export interface IProgram {
   program_id: IUint64
 }
 
-export interface IProgwallets {
+export interface IProgwallet {
   id: IUint64
   coopname: IName
   program_id: IUint64
@@ -410,14 +413,6 @@ export interface IVotefor {
   coopname: IName
   member: IName
   decision_id: IUint64
-}
-
-export interface IWallets {
-  username: IName
-  coopname: IName
-  available: IAsset
-  blocked: IAsset
-  minimum: IAsset
 }
 
 export interface IWithdraw {

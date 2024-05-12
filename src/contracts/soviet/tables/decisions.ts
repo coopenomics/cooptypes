@@ -14,4 +14,4 @@ export const scope = Actors._coopname
 /**
  * @interface
  */
-export type IDecisions = Soviet.IDecisions
+export type IDecision = Soviet.IDecision

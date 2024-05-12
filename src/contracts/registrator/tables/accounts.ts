@@ -15,4 +15,4 @@ export const scope = ContractNames._registrator
  * @interface
  * Таблица содержит реестр аккаунтов системы.
  */
-export type IAccounts = Registrator.IAccounts
+export type IAccount = Registrator.IAccount

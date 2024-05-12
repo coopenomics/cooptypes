@@ -8,7 +8,7 @@ export type ISignature = string
 export type ITimePointSec = string
 export type IUint64 = number | string
 
-export interface IAccfunds {
+export interface IAccfund {
   id: IUint64
   coopname: IName
   contract: IName
@@ -92,7 +92,7 @@ export interface IEditfund {
   percent: IUint64
 }
 
-export interface IExpfunds {
+export interface IExpfund {
   id: IUint64
   coopname: IName
   contract: IName
@@ -122,7 +122,7 @@ export interface IFundwithdraw {
   bank_data_id: string
 }
 
-export interface IFwithdraws {
+export interface IFwithdraw {
   id: IUint64
   coopname: IName
   username: IName

@@ -15,4 +15,4 @@ export const scope = ContractNames._fund
  * @interface
  * Таблица содержит переводы черновиков документов.
  */
-export type IAccumulatedFunds = Fund.IAccfunds
+export type IAccumulatedFund = Fund.IAccfund

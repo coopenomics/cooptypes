@@ -15,4 +15,4 @@ export const scope = Actors._contract
  * @interface
  * Таблица содержит переводы черновиков документов.
  */
-export type ITranslations = Draft.ITranslations
+export type ITranslation = Draft.ITranslation

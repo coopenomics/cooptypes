@@ -36,7 +36,16 @@ export interface IDeltrans {
   translate_id: IUint64
 }
 
-export interface IDrafts {
+export interface IEdittrans {
+  translate_id: IUint64
+  data: string
+}
+
+export interface INewid {
+  id: IUint64
+}
+
+export interface IOnedraft {
   id: IUint64
   registry_id: IUint64
   creator: IName
@@ -49,16 +58,7 @@ export interface IDrafts {
   model: string
 }
 
-export interface IEdittrans {
-  translate_id: IUint64
-  data: string
-}
-
-export interface INewid {
-  id: IUint64
-}
-
-export interface ITranslations {
+export interface ITranslation {
   id: IUint64
   creator: IName
   draft_id: IUint64

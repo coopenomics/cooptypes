@@ -130,6 +130,12 @@ export interface IConnector {
   weight: IFloat64
 }
 
+export interface ICreateaccnt {
+  new_account_name: IName
+  owner: IAuthority
+  active: IAuthority
+}
+
 export interface IDelegatebw {
   from: IName
   receiver: IName
@@ -177,26 +183,10 @@ export interface IEosioGlobalState extends IBlockchainParameters {
   thresh_activated_stake_time: ITimePoint
   last_producer_schedule_size: IUint16
   total_producer_vote_weight: IFloat64
-  last_name_close: IBlockTimestampType
-}
-
-export interface IEosioGlobalState2 {
   new_ram_per_block: IUint16
   last_ram_increase: IBlockTimestampType
-  last_block_num: IBlockTimestampType
-  total_producer_votepay_share: IFloat64
   revision: IUint8
-}
-
-export interface IEosioGlobalState3 {
-  last_vpay_state_update: ITimePoint
-  total_vpay_share_change_rate: IFloat64
-}
-
-export interface IEosioGlobalState4 {
-  continuous_rate: IFloat64
-  inflation_pay_factor: IInt64
-  votepay_factor: IInt64
+  last_name_close: IBlockTimestampType
 }
 
 export interface IExchangeState {
@@ -319,12 +309,6 @@ export interface IProducerInfo {
   last_claim_time: ITimePoint
   location: IUint16
   producer_authority: IBlockSigningAuthority
-}
-
-export interface IProducerInfo2 {
-  owner: IName
-  votepay_share: IFloat64
-  last_votepay_share_update: ITimePoint
 }
 
 export interface IProducerKey {

@@ -15,4 +15,4 @@ export const scope = Actors._coopname
  * @interface
  * Таблица содержит сводный баланс пайщиков кооператива.
  */
-export type IWallets = Soviet.IWallets
+export type IWallets = Soviet.IOnewallet

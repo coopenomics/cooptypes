@@ -14,4 +14,4 @@ export const scope = ContractNames._fund
 /**
  * @interface
  */
-export type IExpensedFunds = Fund.IExpfunds
+export type IExpensedFund = Fund.IExpfund
