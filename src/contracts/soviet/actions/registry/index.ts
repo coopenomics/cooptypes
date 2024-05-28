@@ -2,7 +2,7 @@
  * Действие фиксирует документ в реестре перед отправкой в совет на голосование.
  * @private
  */
-export * as NewDraft from './newdraft'
+export * as NewSubmitted from './newsubmitted'
 
 /**
  * Действие фиксирует связанную группу подписанных документов, которые отправляются в совет на голосование.
@@ -14,7 +14,7 @@ export * as NewBatch from './newbatch'
  * Действие фиксирует в реестре заявление, по которому принято решение советом кооператива.
  * @private
  */
-export * as NewStatement from './newstatement'
+export * as NewResolved from './newresolved'
 
 /**
  * Действие фиксирует в реестре подписанные акты приёма-передачи имущества.

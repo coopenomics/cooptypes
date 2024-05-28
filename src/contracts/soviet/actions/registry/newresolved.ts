@@ -10,10 +10,11 @@ export const authorizations = [{ permissions: [Permissions.active], actor: Contr
 /**
  * Имя действия
  */
-export const actionName = 'newdraft'
+export const actionName = 'newresolved'
 
 /**
  * @interface
- * Действие фиксирует документ в реестре перед отправкой в совет.
+ * Действие фиксирует принятое заявление в реестре после принятия решения советом кооператива.
+ * @private
  */
-export type INewDraft = Soviet.INewdraft
+export type INewResolved = Soviet.INewresolved

@@ -178,6 +178,7 @@ export interface IDecision {
   validated: boolean
   approved: boolean
   authorized: boolean
+  authorized_by: IName
   authorization: IDocument
   created_at: ITimePointSec
 }
@@ -279,18 +280,20 @@ export interface INewdecision {
   document: IDocument
 }
 
-export interface INewdraft {
-  coopname: IName
-  username: IName
-  decision_id: IUint64
-}
-
 export interface INewprogram {
   coopname: IName
   program_id: IUint64
 }
 
-export interface INewstatement {
+export interface INewresolved {
+  coopname: IName
+  username: IName
+  action: IName
+  decision_id: IUint64
+  document: IDocument
+}
+
+export interface INewsubmitted {
   coopname: IName
   username: IName
   action: IName
