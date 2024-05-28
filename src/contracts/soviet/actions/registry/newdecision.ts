@@ -10,10 +10,10 @@ export const authorizations = [{ permissions: [Permissions.active], actor: Contr
 /**
  * Имя действия
  */
-export const actionName = 'program'
+export const actionName = 'newdecision'
 
 /**
  * @interface
- * Действие фиксирует созданную программу после создания и возвращает её идентификатор
+ * Действие фиксирует в реестре принятое решение совета.
  */
-export type IProgram = Soviet.IProgram
+export type INewDecision = Soviet.INewdecision

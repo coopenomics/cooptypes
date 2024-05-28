@@ -8,14 +8,6 @@ export type ISignature = string
 export type ITimePointSec = string
 export type IUint64 = number | string
 
-export interface IAct {
-  coopname: IName
-  username: IName
-  action: IName
-  decision_id: IUint64
-  document: IDocument
-}
-
 export interface IAddbalance {
   coopname: IName
   username: IName
@@ -89,12 +81,6 @@ export interface IAutomator {
 
 export interface IAutosigner {
   decision_id: IUint64
-}
-
-export interface IBatch {
-  coopname: IName
-  action: IName
-  batch_id: IUint64
 }
 
 export interface IBlockbal {
@@ -221,12 +207,6 @@ export interface IDocument {
   meta: string
 }
 
-export interface IDraft {
-  coopname: IName
-  username: IName
-  decision_id: IUint64
-}
-
 export interface IEditaddress {
   coopname: IName
   chairman: IName
@@ -277,6 +257,47 @@ export interface IJoincoops {
   notice: string
 }
 
+export interface INewact {
+  coopname: IName
+  username: IName
+  action: IName
+  decision_id: IUint64
+  document: IDocument
+}
+
+export interface INewbatch {
+  coopname: IName
+  action: IName
+  batch_id: IUint64
+}
+
+export interface INewdecision {
+  coopname: IName
+  username: IName
+  action: IName
+  decision_id: IUint64
+  document: IDocument
+}
+
+export interface INewdraft {
+  coopname: IName
+  username: IName
+  decision_id: IUint64
+}
+
+export interface INewprogram {
+  coopname: IName
+  program_id: IUint64
+}
+
+export interface INewstatement {
+  coopname: IName
+  username: IName
+  action: IName
+  decision_id: IUint64
+  document: IDocument
+}
+
 export interface IOnewallet {
   username: IName
   coopname: IName
@@ -309,11 +330,6 @@ export interface IProgcomarket {
   calculation_type: IName
   membership_percent_fee: IUint64
   fixed_membership_contribution: IAsset
-}
-
-export interface IProgram {
-  coopname: IName
-  program_id: IUint64
 }
 
 export interface IProgwallet {
@@ -359,14 +375,6 @@ export interface IStaff {
   rights: IRight[]
   created_at: ITimePointSec
   updated_at: ITimePointSec
-}
-
-export interface IStatement {
-  coopname: IName
-  username: IName
-  action: IName
-  decision_id: IUint64
-  document: IDocument
 }
 
 export interface ISubbalance {
