@@ -44,7 +44,7 @@
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks",
     "doc": "typedoc",
-    "publish-docs": "pnpm run doc && pnpm gh-pages -d docs"
+    "publish-docs": "pnpm run doc && pnpm gh-pages --nojekyll -d docs"
   },
   "dependencies": {
     "@typescript-eslint/parser": "^7.8.0"
