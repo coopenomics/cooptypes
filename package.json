@@ -38,13 +38,13 @@
     "dev": "unbuild --stub",
     "lint": "eslint .",
     "prepublishOnly": "nr build",
-    "release": "bumpp && npm publish",
+    "release": "bumpp && npm publish && pnpm gh-pages --nojekyll -d docs",
     "start": "esno src/index.ts",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks",
     "doc": "typedoc",
-    "publish-docs": "pnpm run doc && pnpm gh-pages --nojekyll -d docs"
+    "docs-publish": "pnpm gh-pages --nojekyll -d docs --repo git@github.com:copenomics/docs.git -e cooptypes --add"
   },
   "dependencies": {
     "@typescript-eslint/parser": "^7.8.0"

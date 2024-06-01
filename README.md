@@ -29,8 +29,11 @@ const api = new EosApi(options);
 const coopname = 'testcoop' - тестовое имя аккаунта кооператива
 
 const _scope = SovietContract.Tables.Boards.scope
+```
 
 Получив _scope, необходимо проверить его и подставить переменную:
+
+```
 let scope
 
 if (_scope === '_coopname' )
