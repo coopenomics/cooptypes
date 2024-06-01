@@ -43,7 +43,8 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks",
-    "doc": "typedoc"
+    "doc": "typedoc",
+    "publish-docs": "pnpm run doc && pnpm gh-pages -d docs"
   },
   "dependencies": {
     "@typescript-eslint/parser": "^7.8.0"
@@ -58,6 +59,7 @@
     "bumpp": "^9.4.1",
     "eslint": "^9.1.1",
     "esno": "^4.7.0",
+    "gh-pages": "^6.1.1",
     "jsdoc": "^4.0.3",
     "lint-staged": "^15.2.2",
     "pnpm": "^9.0.6",
