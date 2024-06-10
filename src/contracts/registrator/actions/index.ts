@@ -14,6 +14,11 @@ export * as UpdateAccount from './updateAccount'
 export * as CreateAccount from './createAccount'
 
 /**
+ * Действие регистрации карточки пользователя в кооперативе
+ */
+export * as RegisterUser from './registerUser'
+
+/**
  * Действие регистрации карточки организации в кооперативе
  */
 export * as RegisterOrganization from './registerOrganization'
