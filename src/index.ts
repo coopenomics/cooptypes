@@ -12,3 +12,4 @@
 
 export * as _Common from './common'
 export * from './contracts'
+export * as Cooperative from './cooperative'
