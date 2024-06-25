@@ -1,2 +1,2 @@
 export * as Deposits from './deposits'
-export * as Withdrws from './withdraws'
+export * as Withdraws from './withdraws'
