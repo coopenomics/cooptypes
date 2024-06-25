@@ -1,7 +1,7 @@
 {
   "name": "cooptypes",
   "type": "module",
-  "version": "0.5.22",
+  "version": "0.5.23",
   "packageManager": "pnpm@9.0.6",
   "description": "_description_",
   "author": "Alex Ant <dacom.dark.sun@gmail.com>",
