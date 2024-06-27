@@ -3,7 +3,7 @@ import type * as Soviet from '../../../../interfaces/soviet'
 import { Actors } from '../../../../common'
 
 /**
- * Действие выполняется за подписью {@link Actors._init | системного контракта}.
+ * Действие выполняется за подписью {@link Actors._system | системного контракта}.
  */
 export const authorizations = [
   { permissions: [Permissions.active], actor: Actors._system },

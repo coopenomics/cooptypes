@@ -30,3 +30,8 @@ export * as Decisions from './decisions'
  * Пространство управления собраниями и советами.
  */
 export * as Boards from './boards'
+
+/**
+ * Пространство управления администраторами.
+ */
+export * as Admins from './admins'

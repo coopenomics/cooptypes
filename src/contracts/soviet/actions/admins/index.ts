@@ -20,5 +20,6 @@ export * as SetRights from './setRights'
 
 /**
  * Действие для инициализации контракта.
+ * @private
  */
 export * as Init from './init'
