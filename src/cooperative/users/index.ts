@@ -19,6 +19,7 @@ export interface IBankAccount {
 }
 
 export interface IIndividualData {
+  username: string
   first_name: string
   last_name: string
   middle_name: string
@@ -29,6 +30,7 @@ export interface IIndividualData {
 }
 
 export interface IOrganizationData {
+  username: string
   type: 'coop' | 'ooo' | 'oao' | 'zao' | 'pao' | 'ao'
   is_cooperative: boolean
   short_name: string
@@ -50,6 +52,7 @@ export interface IOrganizationData {
 }
 
 export interface IEntrepreneurData {
+  username: string
   first_name: string
   last_name: string
   middle_name: string
