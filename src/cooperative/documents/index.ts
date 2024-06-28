@@ -71,3 +71,23 @@ export interface IAgenda {
 export interface IComplexAgenda extends IAgenda {
   documents: IComplexDocument
 }
+
+/**
+ * Общий интерфейс для генерации/регенерации документа
+ */
+export interface IGenerate extends Omit<Partial<IMetaDocument>, 'registry_id' | 'title'> {
+  code: string
+  action: string
+  coopname: string
+  username: string
+  [key: string]: any
+}
+
+export interface IGenerateJoinCoop extends IGenerate {
+  signature: string
+  skip_save: boolean
+}
+
+export interface IGenerateJoinCoopDecision extends IGenerate {
+  decision_id: number
+}
