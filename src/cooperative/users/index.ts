@@ -29,6 +29,7 @@ export interface IIndividualData {
 }
 
 export interface IOrganizationData {
+  type: 'coop' | 'ooo' | 'oao' | 'zao' | 'pao' | 'ao'
   is_cooperative: boolean
   short_name: string
   full_name: string
