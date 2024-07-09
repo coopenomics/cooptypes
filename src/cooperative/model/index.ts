@@ -1,5 +1,5 @@
 import type { SovietContract } from '../../contracts'
-import type { IIndividualData, IOrganizationData } from '../users'
+import type { Details, IIndividualData, IOrganizationData } from '../users'
 
 export interface ICooperativeData extends IOrganizationData {
   announce: string
@@ -16,4 +16,22 @@ export interface ICooperativeData extends IOrganizationData {
 
 export interface MembersData extends SovietContract.Interfaces.IBoardMember, IIndividualData {
   is_chairman: boolean
+}
+
+export interface IAnnounce {
+  phone: string
+  email: string
+}
+
+export interface IContacts {
+  full_name: string
+  full_address: string
+  details: Details
+  phone: string
+  email: string
+  chairman: {
+    first_name: string
+    last_name: string
+    middle_name: string
+  }
 }

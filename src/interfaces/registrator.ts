@@ -83,6 +83,7 @@ export interface IOrganization {
   description: string
   is_cooperative: boolean
   is_branched: boolean
+  is_enrolled: boolean
   coop_type: IName
   registration: IAsset
   initial: IAsset
