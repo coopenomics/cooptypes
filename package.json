@@ -2,16 +2,14 @@
   "name": "cooptypes",
   "type": "module",
   "version": "1.0.7",
-  "packageManager": "pnpm@9.0.6",
   "description": "_description_",
   "author": "Alex Ant <dacom.dark.sun@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/copenomics/cooptypes.git"
+    "url": "git+https://github.com/coopenomics/cooptypes.git"
   },
   "keywords": [],
-  "sideEffects": false,
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
